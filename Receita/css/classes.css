@@ -1,0 +1,76 @@
+/* SEÇÃO DAS CLASSES DO INDEX */
+#categorias-receitas {
+    text-align: center;
+  }
+  
+  #categorias-receitas h2 {
+    padding: 10px 0;
+  }
+  
+  .galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .imagem {
+    text-align: center;
+  }
+  
+  .imagem img {
+    display: block;
+    width: 250px;
+    height: 180px;
+    margin: 0;
+    border-radius: 5px;
+    object-fit: cover;
+    filter: brightness(0.7);
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .imagem img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+  }
+  
+  .botao {
+    background-color: #e8e8e8;
+    color:  #3c3c3c;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 0px;
+    cursor: pointer;
+    text-decoration: none;    
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .botao:hover {
+    background-color:  rgb(255, 132, 0);
+  }
+  
+  #botao {
+    padding: 10px 30px;
+  }
+
+
+/* SEÇÃO DE CATEGORIAS DAS RECEITAS */
+
+  .galeria-receitas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que as imagens quebrem em várias linhas */
+    gap: 20px;
+  }
+  
+
+  
+  h3 {
+    color:  #3c3c3c;
+    text-align: center;
+    cursor: pointer;   
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
