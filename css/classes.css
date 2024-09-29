@@ -42,7 +42,7 @@ h3 {
   filter: brightness(1.2);
 }
 
-
+/* SEÇÃO DO INDEX */
 #categorias-receitas {
     text-align: center;
   }
@@ -54,6 +54,7 @@ h3 {
   .galeria {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
   }
   
