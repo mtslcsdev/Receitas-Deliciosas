@@ -1,0 +1,153 @@
+/* SEÇÃO DOS INGREDIENTES CADA RECEITA */
+  /* CONTAINER PRINCIPAL */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.titulo1 {
+    color: #ff6a28;
+}
+
+.titulo2 {
+    color: rgb(255, 132, 0);
+}
+
+/* IMAGEM DESTACADA */
+.image-destaque {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* TÍTULO DA RECEITA */
+.titulo-receita {
+    font-size: 36px;
+    color: #ff6a28;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* SEÇÃO DE RECEITA - Dividindo em duas colunas */
+.receita-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* COLUNA DE INGREDIENTES */
+.coluna-ingredientes {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.coluna-ingredientes h2 {
+    font-size: 24px;
+    color: #ff6a28;
+    margin-bottom: 10px;
+}
+
+/* Lista de Ingredientes */
+.coluna-ingredientes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coluna-ingredientes li {
+    padding: 10px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+/* COLUNA DO MODO DE PREPARO */
+.coluna-preparo {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Estilo da lista ordenada do modo de preparo */
+.coluna-preparo ol {
+    counter-reset: step-counter; 
+    list-style: none;
+    padding-left: 0;
+}
+
+.coluna-preparo li {
+    position: relative;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 5px solid #ff6a28;
+    counter-increment: step-counter; 
+}
+
+/* Estiliza o número de cada passo - sem fundo */
+.coluna-preparo li::before {
+    content: counter(step-counter); 
+    position: absolute;
+    top: 50%;
+    left: -30px; 
+    transform: translateY(-50%);
+    color: #707070; 
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+/* TABELA NUTRICIONAL - Estilo e Layout */
+.tabela-nutricional {
+    width: 100%; 
+    border-collapse: collapse;
+    margin: 40px auto; 
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 800px; 
+}
+
+.tabela-nutricional h2 {
+    text-align: center; 
+    color: black; 
+    margin-bottom: 20px; 
+}
+
+.tabela-nutricional th, .tabela-nutricional td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #dedede;
+}
+
+.tabela-nutricional th {
+    background-color: #ff6a28;
+    color: white;
+    font-weight: bold;
+}
+
+.tabela-nutricional td {
+    color: #707070;
+}
+
+/* Responsividade - Ajuste da tabela em telas menores */
+@media (max-width: 768px) {
+    .receita-grid {
+        flex-direction: column;
+    }
+
+    .tabela-nutricional, .tabela-nutricional th, .tabela-nutricional td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .tabela-nutricional th, .tabela-nutricional td {
+        display: block; /* Empilha as células em telas pequenas */
+        width: 100%; 
+    }
+}
