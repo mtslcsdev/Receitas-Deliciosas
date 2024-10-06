@@ -138,16 +138,16 @@
 /* Responsividade - Ajuste da tabela em telas menores */
 @media (max-width: 768px) {
     .receita-grid {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .tabela-nutricional, .tabela-nutricional th, .tabela-nutricional td {
-        font-size: 14px;
-        padding: 10px;
+      font-size: 14px;
+      padding: 10px;
     }
-
+  
     .tabela-nutricional th, .tabela-nutricional td {
-        display: block; /* Empilha as células em telas pequenas */
-        width: 100%; 
+      display: block; 
+      width: 100%; 
     }
-}
+  }

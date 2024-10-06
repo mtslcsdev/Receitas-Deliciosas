@@ -81,3 +81,15 @@ h3 {
     padding: 10px 30px;
   }
 
+  @media (max-width: 768px) {
+    .imagem {
+      flex: 1 1 45%; /* 2 colunas ao diminuir a tela */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .imagem {
+      flex: 1 1 100%; /* 1 coluna em tela muito pequena */
+    }
+  }
+
