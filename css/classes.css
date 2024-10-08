@@ -109,15 +109,31 @@ h3 {
   filter: brightness(1.2);
 }
 
-  @media (max-width: 768px) {
-    .imagem {
-      flex: 1 1 45%; /* 2 colunas ao diminuir a tela */
-    }
+  /* Responsividade para os textos de apresentação */
+@media (max-width: 768px) {
+  .apresentacao, .apresentacao-regiao {
+      padding: 15px;
   }
-  
-  @media (max-width: 480px) {
-    .imagem {
-      flex: 1 1 100%; /* 1 coluna em tela muito pequena */
-    }
+
+  .apresentacao h4, .apresentacao-regiao h4 {
+      font-size: 20px;
   }
+
+  .apresentacao p, .apresentacao-regiao p {
+      font-size: 16px;
+  }
+}
+
+/* Responsividade para as imagens */
+@media (max-width: 768px) {
+  .imagem {
+    flex: 1 1 45%; /* 2 colunas ao diminuir a tela */
+  }
+}
+
+@media (max-width: 480px) {
+  .imagem {
+    flex: 1 1 100%; /* 1 coluna em tela muito pequena */
+  }
+}
 
