@@ -44,6 +44,29 @@ nav a:hover {
   border: none;
 }
 
+/* Estilo para a apresentação inicial */
+.apresentacao {
+    max-width: 800px;
+    margin: 5px auto 10px;
+    text-align: center;
+}
+
+.apresentacao h4 {
+    font-size: 24px;
+    color: #ff6a28;
+    margin-bottom: 20px;
+}
+
+.apresentacao h4 span {
+    color: rgb(255, 132, 0);
+}
+
+.apresentacao p {
+    font-size: 18px;
+    color: #3c3c3c;
+    line-height: 1.6;
+}
+
 
  /* ESTILO DO RODAPÉ */
  footer {
